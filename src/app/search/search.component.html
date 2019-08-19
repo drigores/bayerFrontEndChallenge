@@ -1,0 +1,25 @@
+<div class="container">
+    <farmer-search-card
+    (onFarmerSelectedEvent)="mySelectedFarmer($event)"
+    [farmerSearchAbstractProvider]="myFarmerSearchProvider"></farmer-search-card>
+  
+  <div *ngIf="farmer">  
+    <div class="example-container">  
+      <mat-form-field>
+        <input matInput [placeholder]="lblTo" type="text" class="example-right-align" [value]="farmer.name" [disabled]='true'>
+      </mat-form-field>
+    </div>
+  
+    <div class="example-container">  
+      <mat-form-field>
+        <input matInput [placeholder]="lblDoc" type="text" class="example-right-align" [value]="farmer.document.documentNumber" [disabled]='true'>
+      </mat-form-field>
+    </div>
+  
+    <div class="example-container">  
+      <mat-form-field>
+        <input matInput [placeholder]="lblAddress" type="text" class="example-right-align" [value]="farmer.address.street" [disabled]='true'>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

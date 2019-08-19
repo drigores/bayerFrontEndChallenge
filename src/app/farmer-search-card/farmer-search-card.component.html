@@ -1,0 +1,17 @@
+<div class="example-container">  
+    <mat-form-field>
+      <input matInput placeholder="Nome ou Doc#" type="text" class="example-right-align" (keydown.enter)="search(input.value)" #input>
+      <span matPrefix>
+          <button mat-icon-button (click)="search(input.value)">
+              <mat-icon aria-hidden="false" aria-label="search">search</mat-icon> 
+          </button> 
+        </span>   
+      <span matSuffix>
+          <button mat-icon-button (click)="search(input.value)">
+              <mat-icon aria-hidden="false" aria-label="arrow_forward">arrow_forward</mat-icon> 
+          </button>
+      </span>
+    </mat-form-field>
+  </div>
+
+
