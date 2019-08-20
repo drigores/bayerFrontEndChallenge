@@ -4,8 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Usage
 
- Run `npm install`
+ Clone this project, enter on folder, open terminal ajd:
+
+ Run `npm install --no-optional`
+
  Run `npm start`
+
+
  Navigate to `http://localhost:4200/`
 
 Search values examples:
